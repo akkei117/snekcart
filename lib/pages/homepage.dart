@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import'package:google_nav_bar/google_nav_bar.dart';
+
 import 'package:snekcart/components/bnavbar.dart';
 import 'package:snekcart/pages/cartpage.dart';
 import 'package:snekcart/pages/shoppage.dart';
 
 class Homepage extends StatefulWidget {
-  Homepage({super.key});
+  const Homepage({super.key});
 
   @override
   State<Homepage> createState() => _HomepageState();
@@ -33,6 +33,7 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       bottomNavigationBar: BottomNavBar(onTabChange: (index) => navigatebottombar(index)),
       body: pages[selectedindex],
     );

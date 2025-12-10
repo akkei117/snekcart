@@ -11,13 +11,16 @@ class Intropage extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(
-            height: 300,
-            width: 300,
-            child: Image.asset(
-              "lib/assets/logo.png",
-              alignment: AlignmentGeometry.center,
+          Center(
+            child: SizedBox(
+              height: 300,
+              width: 300,
+              child: Image.asset(
+                "lib/assets/logo.png",
+                alignment: AlignmentGeometry.center,
+              ),
             ),
           ),
           SizedBox(height: 100),
